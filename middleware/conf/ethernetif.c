@@ -456,7 +456,7 @@ int eth_check_link(void) {
 	return phyreg & PHY_LINKED_STATUS;
 }
 
-inline void lwip_loop_handler(void) {
+void lwip_loop_handler(void) {
 	if (!(ticks % LINK_UP_CHECK_TIME)) {
 		curr_link_status = eth_check_link();
 		if (curr_link_status != prev_link_status) {

@@ -15,7 +15,7 @@ void Netif_Config(void);
 int eth_check_link(void);
 
 void eth_print_status(HAL_ETH_StateTypeDef stat);
-inline void lwip_loop_handler(void);
+void lwip_loop_handler(void);
 
 #endif
 
